@@ -11,24 +11,13 @@ setup.weather(key, lat, lon, date)
 
 \item{date}{Date range: today, yesterday, last5days, "2021-07-01"}
 
-\item{location}{City name eg: Manchester.}
+\item{location}{Latitude, Longitude}
 }
 \value{
 Table containing weather information.
 }
 \description{
 Returns weather metrics for specified Location and Date Range from the Open Weather Map API
-}
-\details{
-This is a descriptions
-desctiptions
-blah blah blah
-}
-\examples{
-\dontrun{
-setup.weather("APIKEY", Manchester,today)
-setup.weather("APIKEY", Manchester, "2021-07-01")
-}
 }
 \author{
 Chloe Morgan

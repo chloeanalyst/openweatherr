@@ -2,13 +2,9 @@
 #'
 #' Returns weather metrics for specified Location and Date Range from the Open Weather Map API
 #'
-#' This is a descriptions
-#' desctiptions
-#' blah blah blah
-#'
 #'
 #' @param key string Your Open Weather Map API key.
-#' @param location City name eg: Manchester.
+#' @param location Latitude, Longitude
 #' @param date Date range: today, yesterday, last5days, "2021-07-01"
 #'
 #' @author Chloe Morgan
@@ -20,13 +16,7 @@
 #' @import dplyr
 #'
 #' @return Table containing weather information.
-#'
-#'
-#' @examples
-#' \dontrun{
-#' setup.weather("APIKEY", Manchester,today)
-#' setup.weather("APIKEY", Manchester, "2021-07-01")
-#' }
+
 
 setup.weather <- function(key,lat,lon,date){
 
