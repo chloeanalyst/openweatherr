@@ -1,5 +1,7 @@
 # openweatherr: Simple wrapper for Open Weather Map API
 
+# Version - 1.0.0
+
 **Author:** Chloe Morgan
 
 **License:** GPL-3
@@ -33,6 +35,25 @@ Basic License - last 5 days historical data, 60 calls/minute - 1,000,000 calls/m
 | 2021-09-11    | 2    | 17.65 | Mist   | mist         | 0.45       |
 | 2021-09-11    | 3    | 17.61 | Rain   | light rain   | 0.89       |
 | 2021-09-11    | 4    | 17.46 | Mist   | mist         | 1.54       |
+
+
+## Available Function:
+
+```
+get.weather()
+```
+Requirements: 
+
+- apiKey = STRING
+- latitude = NUMERIC
+- logitude = NUMERIC
+- date = STRING
+
+```
+get.weather(apiKey, latitude, longitude, date)
+```
+
+See use case examples below.
 
 
 ## Installation:
