@@ -58,4 +58,8 @@ get.weather <- function(key,lat,lon,daterange){
 
   return(result)
 
+  options(warn = defaultW)
+
 }
+
+

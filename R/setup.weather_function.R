@@ -18,7 +18,12 @@
 #' @return Table containing weather information.
 
 
+
 setup.weather <- function(key,lat,lon,date){
+
+
+  defaultW <- getOption("warn")
+  options(warn = -1)
 
   #------------------------------------------------------------------------------- API Call
 
