@@ -28,13 +28,13 @@
 #' setup.weather("APIKEY", Manchester, "2021-07-01")
 #' }
 
-setup.weather <- function(key,location,date){
+setup.weather <- function(key,lat,lon,date){
 
   #------------------------------------------------------------------------------- API Call
 
   apikey <- key
   date_POSIXct <- as.numeric(as.POSIXct(date))
-  URL <- paste0('https://api.openweathermap.org/data/2.5/onecall/timemachine?',location,'&dt=',date_POSIXct,'&appid=',apikey)
+  URL <- paste0('https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=',lat,'&lon=',lon,'&dt=',date_POSIXct,'&appid=',apikey)
   res <- GET(URL)
 
   #------------------------------------------------------------------------------- Transform data

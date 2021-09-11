@@ -29,13 +29,13 @@
 #' }
 
 
-get.weather <- function(key,location,daterange){
+get.weather <- function(key,lat,lon,daterange){
 
   result <- list()
 
   for (i in daterange){
 
-    result[[i]] <- setup.weather(key,location,i)
+    result[[i]] <- setup.weather(key,lat,lon,i)
 
   }
 

@@ -4,7 +4,7 @@
 \alias{get.weather}
 \title{OpenWeatherMapR}
 \usage{
-get.weather(key, location, daterange)
+get.weather(key, lat, lon, daterange)
 }
 \arguments{
 \item{key}{string Your Open Weather Map API key.}

@@ -4,14 +4,14 @@
 \alias{setup.weather}
 \title{OpenWeatherMapR}
 \usage{
-setup.weather(key, location, date)
+setup.weather(key, lat, lon, date)
 }
 \arguments{
 \item{key}{string Your Open Weather Map API key.}
 
-\item{location}{City name eg: Manchester.}
-
 \item{date}{Date range: today, yesterday, last5days, "2021-07-01"}
+
+\item{location}{City name eg: Manchester.}
 }
 \value{
 Table containing weather information.
