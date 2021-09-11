@@ -30,10 +30,15 @@
 
 setup.weather <- function(key,location,date){
 
+  #------------------------------------------------------------------------------- API Call
+
   apikey <- key
   date_POSIXct <- as.numeric(as.POSIXct(date))
   URL <- paste0('https://api.openweathermap.org/data/2.5/onecall/timemachine?',location,'&dt=',date_POSIXct,'&appid=',apikey)
   res <- GET(URL)
+
+  #------------------------------------------------------------------------------- Transform data
+
   data <- fromJSON(rawToChar(res$content))
   dataRes <- data$hourly$weather
   datalist <- rbindlist(dataRes, fill = TRUE)
@@ -48,4 +53,3 @@ setup.weather <- function(key,location,date){
 
   return(datalist)
 }
-
