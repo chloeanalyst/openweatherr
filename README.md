@@ -71,7 +71,7 @@ library(openweatherr)
 ```
 library(openweatherr)
 
-apikey <- '222e546c9302a140b65a4aa0ab9566a2'
+apikey <- "222e546c9302a140b65a4aa0ab9566a2"
 
 date <- list("2021-09-11", "2021-09-10","2021-09-09")
 
@@ -85,7 +85,7 @@ test <- get.weather(apikey,lat,lon,date)
 
 ```
 
-apikey <- '222e546c9302a140b65a4aa0ab9566a2'
+apikey <- "222e546c9302a140b65a4aa0ab9566a2"
 
 date <- "2021-09-11"
 
